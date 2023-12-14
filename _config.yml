@@ -1,0 +1,19 @@
+name: Dani Blog
+description: Blogging about stuffs
+meta_description: "Your New Jekyll Site, Blogging about stuffs"
+
+markdown: kramdown
+highlighter: rouge
+logo: false
+paginate: 15
+baseurl: /kasper
+domain_name: "http://danielneves.com/blog"
+google_analytics: "UA-XXXXXXXX-X"
+plugins: [jekyll-paginate]
+
+# Details for the RSS feed generator
+# url: ""
+# author: Daniel Neves"
+
+# Disqus config
+disqus-shortname: ""
