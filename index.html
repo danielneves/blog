@@ -19,7 +19,7 @@ about: 'about.html'
             <h1 class="page-title">{{ site.name }}</h1>
             <h2 class="page-description">
                 {% if site.description %} {{ site.description }}. {% endif %}
-                {% if page.about %} <a href='{{page.about | relative_url}}'> About me </a> {% endif %}
+                <!-- {% if page.about %} <a href='{{page.about | relative_url}}'> About me </a> {% endif %} -->
             </h2>
         </div>
     </div>
@@ -38,18 +38,18 @@ about: 'about.html'
 
     <article class="post">
         <header class="post-header">
-            <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+            <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a> »</h2>
         </header>
-        <section class="post-excerpt">
+        <!-- <section class="post-excerpt">
             {{ post.excerpt }} <a class="read-more" href="{{ post.url | relative_url }}">&raquo;</a>
-        </section>
+        </section> -->
         <footer class="post-meta">
             {% if site.author %}
                 <img class="author-thumb" src="{{'/assets/images/profile.png' | relative_url}}" alt="Author's profile picture" nopin="nopin" />
                 {{ site.author }}
             {% endif %}
             {% if post.categories.size > 0 %} 
-                {{ post.categories | array_to_sentence_string | prepend: 'on ' }} 
+                {{ post.categories | array_to_sentence_string | prepend: 'em ' }} 
             {% endif %}
             <time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">
                 {{ post.date | date_to_string }}

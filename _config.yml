@@ -1,6 +1,6 @@
-name: Dani Blog
-description: Blogging about stuffs
-meta_description: "Your New Jekyll Site, Blogging about stuffs"
+name: blog
+description: daniel neves
+meta_description: "meu laboratório de ideias e pensamentos"
 
 markdown: kramdown
 highlighter: rouge
